@@ -22,6 +22,8 @@
         if(play == true){
            prompt("What's your name?","Harry Potter");
            alert("Hello "+name+" !");
+          document.getElementById("log").innerHTML = 
+              document.getElementByID("log").innerHTML+name+"<br>";
         }
       }
     </script>
