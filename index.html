@@ -17,14 +17,16 @@
         }
     </style>
     <script>
-      play = confirm("Do you want to play?");
-      if(play == true){
-         prompt("What's your name?","Harry Potter");
-         alert("Hello "+name+" !");
+      function beginGame(){
+        play = confirm("Do you want to play?");
+        if(play == true){
+           prompt("What's your name?","Harry Potter");
+           alert("Hello "+name+" !");
+        }
       }
     </script>
   </head>
-  <body>
+  <body onload="beginGame()">
     <div id ="log"></div>
     <input id="input" type="text" />
   </body>
