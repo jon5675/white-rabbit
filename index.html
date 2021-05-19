@@ -22,9 +22,11 @@
         if(play == true){
            name = prompt("What's your name?","Harry Potter");
            alert("Hello "+name+" !");
-          document.getElementById("log").innerHTML = 
-              document.getElementByID("log").innerHTML+name+"<br>";
+           writeText(name);
         }
+        function writeText(name) { 
+              document.getElementById("log").innerHTML 
+              document.getElementByID("log").innerHTML+name+"<br>";}
       }
     </script>
   </head>
